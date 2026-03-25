@@ -1,34 +1,36 @@
-# 📄 AI PDF Q&A System (RAG)
+# 📄 AI PDF Question Answering System (RAG)
 
 ## 🚀 Overview
 
-This project is an AI-powered PDF Question Answering system built using **Retrieval-Augmented Generation (RAG)**.
-Users can upload any PDF and ask questions, and the system generates accurate answers based on the document content.
+This project is an AI-powered system that allows users to upload PDF documents and ask questions based on their content.
+
+It uses **Retrieval-Augmented Generation (RAG)** to retrieve relevant information from the document and generate accurate, context-aware answers.
 
 ---
 
-## 🧠 How It Works
+## 🧠 Architecture
 
-PDF → Text → Chunking → Embeddings → Vector DB (FAISS) → Retrieval → LLM → Answer
+PDF → Text Extraction → Chunking → Embeddings → FAISS → Retrieval → LLM → Answer
 
 ---
 
 ## ⚙️ Tech Stack
 
-* Streamlit (Frontend UI)
-* LangChain (Pipeline)
-* FAISS (Vector Database)
-* HuggingFace Transformers (LLM)
-* Sentence Transformers (Embeddings)
+* **Frontend**: Streamlit
+* **Backend**: Python
+* **Framework**: LangChain
+* **Vector Database**: FAISS
+* **LLM**: HuggingFace (FLAN-T5)
+* **Embeddings**: Sentence Transformers
 
 ---
 
 ## ✨ Features
 
-* Upload any PDF 📄
-* Ask questions in natural language 💬
-* Context-aware answers using RAG 🤖
-* Fast similarity search with FAISS ⚡
+* 📄 Upload any PDF
+* 💬 Ask questions in natural language
+* 🤖 Context-aware answers using RAG
+* ⚡ Fast retrieval with FAISS
 
 ---
 
@@ -40,7 +42,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the App
+## ▶️ Run the Application
 
 ```bash
 streamlit run app.py
@@ -50,20 +52,33 @@ streamlit run app.py
 
 ## 📸 Demo
 
-(Add screenshots here after running your app)
+(Add screenshots here)
 
 ---
 
 ## 📁 Project Structure
 
-```
 rag-pdf-qa/
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
+
+---
+
+## 👨‍💻 Author
+
+Krishna Chaitanya Morrem
+
+---
+
+## 📌 Future Improvements
+
+* Chat history (like ChatGPT)
+* Multi-PDF support
+* Better LLM (LLaMA / Mistral)
+* Deployment (Streamlit Cloud)
 
 ---
 
